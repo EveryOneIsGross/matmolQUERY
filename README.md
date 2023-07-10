@@ -4,8 +4,6 @@ This project uses OpenAI api to generate a variety of responses to a given promp
 
 ![Absolute_Reality_v16_neo_from_the_matrix_represented_as_a_seri_1](https://github.com/EveryOneIsGross/matmolQUERY/assets/23621140/7ff51410-9fe1-4c9a-83d3-a277784e992c)
 
-The code is a form of merging sentiments across the matrix, using addition instead of multiplication. Here's how you can view it:
-
 Diverse Responses: By using different temperature settings for each cell in the matmol table, this method ensures a wide range of responses from the AI model. Lower temperatures yield more predictable, focused responses, while higher temperatures yield more creative, diverse responses. This variability is beneficial when you want a mixture of both predictable and innovative responses.
 
 Sentiment Analysis: This method does not just consider the literal content of each response, but also its sentiment. By calculating sentiment scores and using them to weight the responses, the final summary can more accurately reflect the overall sentiment of the responses. This is useful when the emotional tone of the responses is significant, such as in customer service, public relations, or social media management.
