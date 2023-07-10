@@ -1,4 +1,4 @@
-# Multiplexed AI Text Generation with Sentiment Analysis
+# Multiplexed AI Text Generation with Distributed Sentiment Analysis
 
 This project uses OpenAI api to generate a variety of responses to a given prompt, and then summarizes the responses based on sentiment analysis. The unique aspect of this project is the use of a populating matrix table to create a multi-layered, multiplexed response set.
 
