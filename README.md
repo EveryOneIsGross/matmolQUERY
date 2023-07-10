@@ -2,6 +2,8 @@
 
 This project uses OpenAI api to generate a variety of responses to a given prompt, and then summarizes the responses based on sentiment analysis. The unique aspect of this project is the use of a "matmol" table to create a multi-layered, multiplexed response set.
 
+![Absolute_Reality_v16_neo_from_the_matrix_represented_as_a_seri_1](https://github.com/EveryOneIsGross/matmolQUERY/assets/23621140/7ff51410-9fe1-4c9a-83d3-a277784e992c)
+
 ## Temperature Control
 
 The matmol table is to generate a variety of responses at different "temperatures". In the context of AI language models, "temperature" refers to the randomness of the model's responses. At low temperatures, the model is more deterministic and likely to choose the most likely response. At high temperatures, the model's responses are more diverse and can sometimes be surprising. In this project, the table is a two-dimensional grid where each cell corresponds to a different temperature setting. This creates a broad spectrum of responses, from conservative to creative.
