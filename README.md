@@ -6,7 +6,7 @@ This project uses OpenAI api to generate a variety of responses to a given promp
 
 ![Absolute_Reality_v16_neo_from_the_matrix_represented_as_a_seri_1](https://github.com/EveryOneIsGross/matmolQUERY/assets/23621140/7ff51410-9fe1-4c9a-83d3-a277784e992c)
 
-The code as a form of merging sentiments across the matrix, using addition instead of multiplication. Here's how you can view it:
+The code is a form of merging sentiments across the matrix, using addition instead of multiplication. Here's how you can view it:
 
 Sentiment Accumulation: Each response in the matrix is associated with a sentiment score, which represents the overall sentiment of the response. The sentiment scores are calculated using the SentimentIntensityAnalyzer from the nltk.sentiment library. These sentiment scores capture the sentiment polarity of each response, ranging from negative to positive.
 
