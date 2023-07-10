@@ -13,6 +13,12 @@ sia = SentimentIntensityAnalyzer()
 def get_sentiment(text):
     return sia.polarity_scores(text)["compound"]
 
+def slow_addition(a, b):
+    result = 0
+    for _ in range(a):
+        result += b
+    return result
+
 def generate_chat_model(prompt, temperature=0.5, max_tokens=50):
     response = openai.ChatCompletion.create(
         model="gpt-4",
@@ -31,7 +37,7 @@ def matmol_responses(prompt, size):
         layer_responses = []
         for j in range(size):
             # Adjust the temperature based on the position in the matrix
-            temperature = (i + j) / (2 * size)
+            temperature = slow_addition(i, j) / (2 * size)
             if i == 0 or i == size - 1 or j == 0 or j == size - 1:
                 num_responses = 3
             else:
@@ -43,6 +49,7 @@ def matmol_responses(prompt, size):
             layer_responses.append(node_responses)
         responses.append(layer_responses)
     return responses
+
 
 def get_final_summary(summaries, responses):
     final_summary = ""
@@ -58,9 +65,16 @@ def get_final_summary(summaries, responses):
                     sentiment = get_sentiment(responses[i][j])
                     if sentiment > 0:
                         summaries[nx][ny] = responses[i][j]  # Use the corresponding response
+    summary_sentences = []
     for summary in summaries:
-        final_summary += " ".join(summary) + " "
-    return final_summary.strip()
+        summary_sentences.extend(summary)
+    final_summary = " ".join(summary_sentences)
+    
+    # Rephrase the final summary into a concise answer
+    concise_answer = generate_chat_model(final_summary, temperature=0.8, max_tokens=50)
+    
+    return concise_answer
+
 
 def save_to_json(data, filename):
     with open(filename, 'w') as f:
