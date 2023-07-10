@@ -14,9 +14,7 @@ So, for a 3x3 matrix, your script would make 3 (responses per cell) * 9 (cells) 
 
 ## Temperature Control
 
-The matmolQUERY table is to generate a variety of responses at different "temperatures". In the context of AI language models, "temperature" refers to the randomness of the model's responses. At low temperatures, the model is more deterministic and likely to choose the most likely response. At high temperatures, the model's responses are more diverse and can sometimes be surprising.
-
-In this project, the matmolQUERY table is a two-dimensional grid where each cell corresponds to a different temperature setting. This creates a broad spectrum of responses, from conservative to creative.
+The matmol table is to generate a variety of responses at different "temperatures". In the context of AI language models, "temperature" refers to the randomness of the model's responses. At low temperatures, the model is more deterministic and likely to choose the most likely response. At high temperatures, the model's responses are more diverse and can sometimes be surprising. In this project, the table is a two-dimensional grid where each cell corresponds to a different temperature setting. This creates a broad spectrum of responses, from conservative to creative.
 
 ## Sentiment Analysis
 
