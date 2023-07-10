@@ -4,7 +4,7 @@ This project uses OpenAI api to generate a variety of responses to a given promp
 
 # Expensive 
 
-The number of API calls depends on the number of responses generated for each cell in the matrix. According to your code:
+The number of API calls depends on the number of responses generated for each cell in the matrix:
 
 Outer nodes (cells on the edges of the matrix) generate 3 responses each.
 Inner nodes (cells not on the edges) generate 5 responses each.
