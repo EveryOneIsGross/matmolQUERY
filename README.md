@@ -74,11 +74,7 @@ Inner Nodes: The nodes in the middle of the matrix (i.e., not on the outer edges
 
 The difference in the number of responses for the outer and inner nodes is specified in the code to control the diversity and quantity of the generated responses. This difference can be adjusted based on the specific requirements and preferences of the summarization task.
 
-The purpose of generating multiple responses for each node is to have a variety of potential summaries and options to choose from. This allows for a more comprehensive and diverse final summary that incorporates different perspectives and information provided by the AI chat model.
-
-## Expensive 
-
-The number of API calls depends on the number of responses generated for each cell in the matrix:
+The purpose of generating multiple responses for each node is to have a variety of potential summaries and options to choose from. This allows for a more comprehensive and diverse final summary that incorporates different perspectives and information provided by the AI chat model. The number of API calls depends on the number of responses generated for each cell in the matrix:
 
 Outer nodes (cells on the edges of the matrix) generate 3 responses each.
 Inner nodes (cells not on the edges) generate 5 responses each.
