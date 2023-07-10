@@ -2,16 +2,6 @@
 
 This project uses OpenAI api to generate a variety of responses to a given prompt, and then summarizes the responses based on sentiment analysis. The unique aspect of this project is the use of a "matmol" table to create a multi-layered, multiplexed response set.
 
-# Expensive 
-
-The number of API calls depends on the number of responses generated for each cell in the matrix:
-
-Outer nodes (cells on the edges of the matrix) generate 3 responses each.
-Inner nodes (cells not on the edges) generate 5 responses each.
-In a 3x3 matrix, all nodes are considered outer nodes because all of them are on the edge of the matrix. Therefore, each of the 9 cells would generate 3 responses.
-
-So, for a 3x3 matrix, your script would make 3 (responses per cell) * 9 (cells) = 27 API calls.
-
 ## Temperature Control
 
 The matmol table is to generate a variety of responses at different "temperatures". In the context of AI language models, "temperature" refers to the randomness of the model's responses. At low temperatures, the model is more deterministic and likely to choose the most likely response. At high temperatures, the model's responses are more diverse and can sometimes be surprising. In this project, the table is a two-dimensional grid where each cell corresponds to a different temperature setting. This creates a broad spectrum of responses, from conservative to creative.
@@ -73,6 +63,16 @@ Inner Nodes: The nodes in the middle of the matrix (i.e., not on the outer edges
 The difference in the number of responses for the outer and inner nodes is specified in the code to control the diversity and quantity of the generated responses. This difference can be adjusted based on the specific requirements and preferences of the summarization task.
 
 The purpose of generating multiple responses for each node is to have a variety of potential summaries and options to choose from. This allows for a more comprehensive and diverse final summary that incorporates different perspectives and information provided by the AI chat model.
+
+# Expensive 
+
+The number of API calls depends on the number of responses generated for each cell in the matrix:
+
+Outer nodes (cells on the edges of the matrix) generate 3 responses each.
+Inner nodes (cells not on the edges) generate 5 responses each.
+In a 3x3 matrix, all nodes are considered outer nodes because all of them are on the edge of the matrix. Therefore, each of the 9 cells would generate 3 responses.
+
+So, for a 3x3 matrix, your script would make 3 (responses per cell) * 9 (cells) = 27 API calls.
 
 
 # Weighting
