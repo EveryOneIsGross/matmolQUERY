@@ -1,4 +1,4 @@
-# matmolQUERY: Multiplexed AI Text Generation with Sentiment Analysis
+Multiplexed AI Text Generation with Sentiment Analysis
 
 
 # Chatbot Project with matmol Table
