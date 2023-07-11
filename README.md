@@ -19,7 +19,7 @@ This method could be particularly useful in several scenarios. For example, when
 
 ## Code Components
 The code is composed of several key functions:
-```
+
 generate_chat_model Function:
 This function uses the OpenAI API to generate a response based on the input prompt.
 
@@ -37,6 +37,5 @@ This is the main entry point of the program. It prompts the user to enter a prom
 
 The code checks if the script is being executed directly and calls the main function accordingly. The script generates multiple responses for each cell in the table, performs sentiment analysis on each response, adjusts the weights of the summaries based on the sentiment scores, and generates a final summary that incorporates the positive information extracted from the responses across the matrix.
 
-```
 
 In summary, this project presents a novel way of generating, weighting, and summarizing responses from an AI model. By considering both the content and sentiment of the responses and by propagating this sentiment across a table, the method ensures a final summary that is both comprehensive and nuanced.
