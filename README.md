@@ -2,7 +2,8 @@
 
 This project uses OpenAI api to generate a variety of responses to a given prompt, and then summarizes the responses based on sentiment analysis. The unique aspect of this project is the use of a populating matrix table to create a multi-layered, multiplexed response set.
 
-![Absolute_Reality_v16_neo_from_the_matrix_represented_as_a_seri_1](https://github.com/EveryOneIsGross/matmolQUERY/assets/23621140/7ff51410-9fe1-4c9a-83d3-a277784e992c)
+![facessenti](https://github.com/EveryOneIsGross/sentimentalMULTIPLEXER/assets/23621140/7d946844-073c-4141-826e-7100682b79af)
+
 
 ## Sentiment Analysis:
 This method does not just consider the literal content of each response, but also its sentiment. By calculating sentiment scores and using them to weight the responses, the final summary can more accurately reflect the overall sentiment of the responses. This is useful when the emotional tone of the responses is significant, such as in customer service, public relations, or social media management.
